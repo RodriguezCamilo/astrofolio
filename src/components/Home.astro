@@ -20,21 +20,21 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
 
 <section
     id="home"
-    class="h-screen p-9 gap-6 lg:gap-10 grid sm:grid-cols-4 sm:grid-rows-4"
+    class="sm:h-screen p-9 gap-2 sm:gap-6 lg:gap-10 grid grid-cols-2 grid-rows-9 sm:grid-cols-4 sm:grid-rows-4"
 >
     <div
         class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 text-center text-balance grid content-center gap-2"
     >
         <p
-            class="text-violet-600 font-semibold text-4xl md:text-6xl xl:text-8xl group-hover:text-violet-900"
+            class="text-violet-600 font-semibold text-lg sm:text-4xl md:text-6xl xl:text-8xl group-hover:text-violet-900"
         >
             2+
         </p>
-        <p class="text-xl xl:text-2xl">Años estudiando desarrollo web</p>
+        <p class="text-base sm:text-xl xl:text-2xl">Años estudiando desarrollo web</p>
     </div>
-    <div class="rounded-lg border-2 border-neutral-900/20">
+    <div class="rounded-lg border-2 border-neutral-900/20 bg-neutral-950 opacity-70 hover:bg-violet-600 hover:border-0">
         <div
-            class="w-full h-full opacity-7"
+            class="w-full h-full opacity-70 rounded-lg "
             style="background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGQ1aWUybWtkOWN2N3I1OXJnamQ1eGFtZ2Uydmx5bmFqaDR6cW14OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u2pmTWUi0MXjyrMaVj/giphy.gif'); background-size: cover; background-repeat: no-repeat;"
         >
         </div>
@@ -43,7 +43,7 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
         class="group bg-neutral-950 opacity-70 col-span-2 row-span-2 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 text-center text-row grid content-center"
     >
         <h1
-            class="text-violet-600 font-semibold text-3xl md:text-5xl 2xl:text-7xl group-hover:text-violet-900"
+            class="text-violet-600 font-semibold text-3xl md:text-5xl 2xl:text-7xl group-hover:text-violet-900 p-4"
         >
             Desarrollador web Full-Stack
         </h1>
@@ -52,28 +52,28 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
         class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 flex place-content-center place-items-center"
     >
         <a href="https://www.linkedin.com/in/rocamilo/" target="_blank"
-            ><LinkedInIcon class="w-28 h-28" /></a
+            ><LinkedInIcon class="size-14 sm:size-28" /></a
         >
     </div>
     <div
         class="group bg-violet-600 opacity-70 hover:bg-neutral-950 duration-200 rounded-lg border-2 border-neutral-900/20 text-neutral-950 grid place-items-center justify-around"
     >
-        <h3 class="text-xl font-semibold group-hover:text-violet-600">Edad</h3>
-        <p class="text-6xl font-semibold group-hover:text-violet-600">25</p>
-        <p class="text-2xl font-semibold group-hover:text-violet-600">Años</p>
+        <h3 class="text-sm sm:text-xl font-semibold group-hover:text-violet-600">Edad</h3>
+        <p class="text-3xl sm:text-6xl font-bold sm:font-semibold group-hover:text-violet-600">25</p>
+        <p class="text-sm sm:text-2xl font-semibold group-hover:text-violet-600">Años</p>
     </div>
     <div
         class="group bg-neutral-950 opacity-70 col-span-2 row-span-2 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 grid grid-rows-2"
     >
-        <div class="flex place-items-center justify-center">
+        <div class="hidden sm:flex place-items-center justify-center">
             <h3
-                class="text-violet-600 font-semibold text-4xl lg:text-6xl 2xl:text-8xl group-hover:text-violet-900"
+                class="p-4 text-violet-600 font-semibold text-4xl lg:text-6xl 2xl:text-8xl group-hover:text-violet-900"
             >
                 Tecnologías
             </h3>
         </div>
         <div
-            class="flex flex-wrap gap-7 justify-center content-center flex-row"
+            class="flex flex-wrap gap-4 sm:gap-7 justify-center content-center flex-row row-span-2 sm:row-span-1 p-4"
         >
             <HtmlIcon class="sm:w-8 sm:h-8 w-8 h-8 2xl:w-12 2xl:h-12" />
             <CssIcon class="sm:w-8 sm:h-8 w-8 h-8 2xl:w-12 2xl:h-12" />
@@ -94,20 +94,20 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
         </div>
     </div>
     <div
-        class="group bg-violet-600 opacity-70 col-span-2 row-span-2 hover:bg-neutral-950 duration-200 rounded-lg border-2 border-neutral-900/20 grid place-content-center place-items-center gap-4"
+        class="group bg-violet-600 opacity-70 col-span-2 row-span-3 sm:row-span-2 hover:bg-neutral-950 duration-200 rounded-lg border-2 border-neutral-900/20 grid place-content-center place-items-center gap-4 p-4"
     >
         <h3
-            class="group text-neutral-950 group-hover:text-violet-600 text-balance text-center font-semibold md:text-xl lg:text-2xl 2xl:text-4xl"
+            class="group text-neutral-950 group-hover:text-violet-600 text-balance text-center font-semibold text-xl sm:text-xl lg:text-2xl 2xl:text-4xl"
         >
             Hola 👋! Soy
         </h3>
         <h2
-            class="group text-neutral-950 group-hover:text-violet-600 text-balance text-center font-bold md:text-2xl lg:text-4xl 2xl:text-6xl"
+            class="group  text-neutral-950 group-hover:text-violet-600 text-balance text-center font-bold text-2xl sm:text-2xl md:text-2xl lg:text-4xl 2xl:text-6xl"
         >
             Camilo Rodriguez
         </h2>
         <p
-            class="group text-neutral-950 group-hover:text-violet-600 text-balance text-center font-semibold md:text-lg lg:text-xl 2xl:text-2xl"
+            class="group text-neutral-950 group-hover:text-violet-600 text-balance text-center font-semibold text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl"
         >
             Un desarrollador web apasionado por crear experiencias digitales que
             sean útiles, atractivas e innovadoras. Me encanta el desafío de

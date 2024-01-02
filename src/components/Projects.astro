@@ -1,61 +1,113 @@
 ---
-import ReactJS from "../icons/React.astro";
+import ReactIcon from "../icons/React.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
 import Tailwind from "../icons/Tailwind.astro";
+import Express from "../icons/Express.astro";
+import Mongo from "../icons/Mongo.astro";
+import NodeJs from "../icons/NodeJs.astro";
+
+import GitHubIcon from "../icons/LinkGithub.astro";
+import LinkIcon from "../icons/Link.astro";
 
 const TAGS = {
-    REACT: {
-        icon: ReactJS,
+    ASTRO: {
+        icon: AstroIcon,
     },
     TAILWIND: {
         icon: Tailwind,
     },
+    REACT: {
+        icon: ReactIcon,
+    },
+    EXPRESS: {
+        icon: Express,
+    },
+    MONGODB: {
+        icon: Mongo,
+    },
+    NODE: {
+        icon: NodeJs,
+    },
+    A: {
+        icon: Express,
+    }
 };
 
 const PROJECTS = [
+{
+        title: "X-clon / Twitter clon",
+        description:
+            "Un clon de Twitter de punta a punta hecho entre 2 desarrolladores. Un proyecto desafiante en el cual, con mi compañero, nos pusimos a prueba a nosotros mismos. La aplicacion esta construida con las ultimas tecnologias del frontend y backend.",
+        link: "https://github.com/NazaRamos/X-clone",
+        github: "https://github.com/NazaRamos/X-clone",
+        img: "/public/projects/x-clone.webp",
+        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
+    },
+    {
+        title: "KamShop - Ecommerce",
+        description:
+            "Hice este e-commerce mientras estudiaba backend. Implemente un servidor con Express para hacer APIs REST, utilizando MongoDB como base de datos no relacional para guardar usuarios, productos, carritos, ordenes de compra y mas!",
+        link: "https://github.com/RodriguezCamilo/backend-coderhouse",
+        github: "https://github.com/RodriguezCamilo/backend-coderhouse",
+        img: "/public/projects/astrofolio.webp",
+        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
+    },
     {
         title: "Astrofolio",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        link: "",
-        github: "",
+            "Este es mi portfolio web full stack, un sitio web que muestra mis habilidades y experiencia en el desarrollo de aplicaciones web. El sitio está construido con Astro y Tailwind, ¡Ya que son las mejores opciones para construir un sitio web estatico pero muy veloz!",
+        link: "https://github.com/RodriguezCamilo/astrofolio",
+        github: "https://github.com/RodriguezCamilo/astrofolio",
         img: "/public/projects/astrofolio.webp",
-        tags: [TAGS.REACT, TAGS.TAILWIND],
-    },
+        tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    }
 ];
 ---
 
-<section
-    id="projects"
-    class=" p-9 gap-6 lg:gap-10 grid grid-cols-1 grid-rows-3"
->
+<section id="projects" class="p-9 gap-6 lg:gap-10 grid grid-cols-1 grid-rows-3">
     {
-        PROJECTS.map(({ img, title, description, tags }) => (
-            <article class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-cols-2 overflow-hidden">
-                <div class="mr-4">
+        PROJECTS.map(({ img, title, description, tags, link, github }) => (
+            <article class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 overflow-hidden">
+                <a
+                    href={link}
+                    target="_blank"
+                    class="mr-4 hover:opacity-40 duration-200 flex"
+                >
                     <img
                         loading="lazy"
-                        class="aspect-video rounded-lg object-cover object-center"
+                        class="aspect-video rounded-lg object-cover object-center m-2"
                         src={img}
                         alt={`Captura de pantalla del proyecto ${img}`}
                     />
-                    </div>
-                <div class="flex flex-col text-center place-content-center mx-4 justify-evenly"> 
-                    <h3 class="text-6xl font-semibold text-violet-600 group-hover:text-neutral-950 mb-2 flex-initial">
+                </a>
+                <div class="flex flex-col text-center place-content-center mx-4 justify-evenly">
+                    <h3 class=" text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-violet-600 group-hover:text-neutral-950 mb-2 flex-initial group-hover:underline">
                         {title}
                     </h3>
-                    <p class="text-xl mb-4 text-balance flex-initial text-violet-600 group-hover:text-neutral-950 font-semibold">
-                        {description}
-                    </p>
-                    <span>
-
-                    </span>
-                    <ul class="flex place-self-center place-content-center bg-violet-600 group-hover:bg-violet-900  rounded-lg gap-x-2 flex-row mb-2 w-3/5">
-                        {tags.map((tag) => (
-                            <li>
-                                <tag.icon class="size-10" />
-                            </li>
-                        ))}
-                    </ul>
+                    <div class="text-center sm:text-left">
+                        <p class="text-sm sm:text-lg xl:text-xl 2xl:text-2xl mb-4 text-balance flex-initial text-violet-600 group-hover:text-neutral-950 font-semibold">
+                            {description}
+                        </p>
+                        <ul class="flex  gap-x-2 flex-row ">
+                            {tags.map((tag) => (
+                                <li>
+                                    <span
+                                        class={`flex gap-x-2 rounded-full text-xs px-2 border-2 border-neutral-900/20 group-hover:border-violet-900`}
+                                    >
+                                        <tag.icon class="2xl:size-6 size-4 sm:size-4" />
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div class="flex place-content-end gap-2 mx-4">
+                        <a href={link} target="_blank">
+                            <LinkIcon class="2xl:size-8 size-4 sm:size-4 " />
+                        </a>
+                        <a href={github} target="_blank">
+                            <GitHubIcon class="2xl:size-8 size-4 sm:size-4"/>
+                        </a>
+                    </div>
                 </div>
             </article>
         ))
