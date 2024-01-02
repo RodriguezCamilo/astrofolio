@@ -1,1 +1,63 @@
-<section id="projects" class="h-screen"></section>
+---
+import ReactJS from "../icons/React.astro";
+import Tailwind from "../icons/Tailwind.astro";
+
+const TAGS = {
+    REACT: {
+        icon: ReactJS,
+    },
+    TAILWIND: {
+        icon: Tailwind,
+    },
+};
+
+const PROJECTS = [
+    {
+        title: "Astrofolio",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        link: "",
+        github: "",
+        img: "/public/projects/astrofolio.webp",
+        tags: [TAGS.REACT, TAGS.TAILWIND],
+    },
+];
+---
+
+<section
+    id="projects"
+    class=" p-9 gap-6 lg:gap-10 grid grid-cols-1 grid-rows-3"
+>
+    {
+        PROJECTS.map(({ img, title, description, tags }) => (
+            <article class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-cols-2 overflow-hidden">
+                <div class="mr-4">
+                    <img
+                        loading="lazy"
+                        class="aspect-video rounded-lg object-cover object-center"
+                        src={img}
+                        alt={`Captura de pantalla del proyecto ${img}`}
+                    />
+                    </div>
+                <div class="flex flex-col text-center place-content-center mx-4 justify-evenly"> 
+                    <h3 class="text-6xl font-semibold text-violet-600 group-hover:text-neutral-950 mb-2 flex-initial">
+                        {title}
+                    </h3>
+                    <p class="text-xl mb-4 text-balance flex-initial text-violet-600 group-hover:text-neutral-950 font-semibold">
+                        {description}
+                    </p>
+                    <span>
+
+                    </span>
+                    <ul class="flex place-self-center place-content-center bg-violet-600 group-hover:bg-violet-900  rounded-lg gap-x-2 flex-row mb-2 w-3/5">
+                        {tags.map((tag) => (
+                            <li>
+                                <tag.icon class="size-10" />
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </article>
+        ))
+    }
+</section>
