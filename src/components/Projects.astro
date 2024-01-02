@@ -67,7 +67,7 @@ const PROJECTS = [
 <section id="projects" class="p-9 gap-6 lg:gap-10 grid grid-cols-1 grid-rows-3">
     {
         PROJECTS.map(({ img, title, description, tags, link, github }) => (
-            <article class="group bg-neutral-950 opacity-70 hover:bg-violet-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 overflow-hidden">
+            <article class="group bg-neutral-950 opacity-70 hover:bg-purple-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 overflow-hidden">
                 <a
                     href={link}
                     target="_blank"
@@ -81,18 +81,18 @@ const PROJECTS = [
                     />
                 </a>
                 <div class="flex flex-col text-center place-content-center mx-4 justify-evenly">
-                    <h3 class=" text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-violet-600 group-hover:text-neutral-950 mb-2 flex-initial group-hover:underline">
+                    <h3 class=" text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-purple-600 group-hover:text-neutral-950 mb-2 flex-initial group-hover:underline">
                         {title}
                     </h3>
                     <div class="text-center sm:text-left">
-                        <p class="text-sm sm:text-lg xl:text-xl 2xl:text-2xl mb-4 text-balance flex-initial text-violet-600 group-hover:text-neutral-950 font-semibold">
+                        <p class="text-sm sm:text-lg xl:text-xl 2xl:text-2xl mb-4 text-balance flex-initial text-purple-600 group-hover:text-neutral-950 font-semibold">
                             {description}
                         </p>
                         <ul class="flex  gap-x-2 flex-row ">
                             {tags.map((tag) => (
                                 <li>
                                     <span
-                                        class={`flex gap-x-2 rounded-full text-xs px-2 border-2 border-neutral-900/20 group-hover:border-violet-900`}
+                                        class={`flex gap-x-2 rounded-full text-xs px-2 border-2 border-neutral-900/20 group-hover:border-purple-900`}
                                     >
                                         <tag.icon class="2xl:size-6 size-4 sm:size-4" />
                                     </span>
