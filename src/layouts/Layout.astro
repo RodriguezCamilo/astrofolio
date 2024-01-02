@@ -3,14 +3,15 @@ import Contact from "../components/Contact.astro";
 import Header from "../components/Header.astro"
 import Home from "../components/Home.astro"
 import Projects from "../components/Projects.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<body class="grid grid-cols-5 h-screen col-span-4  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] bg-fixed">
+<body class="grid grid-cols-5 h-screen col-span-4 text-white  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] bg-fixed">
     <Header/>
     <main class="col-span-5 lg:col-start-2 lg:col-span-4">
         <Home />
         <Projects/>
         <Contact/>
+        <Footer/>
     </main>
 </body>
-
