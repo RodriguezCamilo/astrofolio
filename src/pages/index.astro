@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import '@fontsource-variable/onest'
-import Footer from "../components/Footer.astro";
+import "@fontsource-variable/onest";
 ---
 
 <!doctype html>
@@ -9,10 +8,16 @@ import Footer from "../components/Footer.astro";
 	<head>
 		<title>Portfolio web Full-stack || Camilo Rodriguez</title>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio de Camilo Rodriguez. Un desarrollador web Full-Stack con mas de dos años de estudio. En él encontrarás una presentacion de quién es, las tecnmologías que usa (tales como React, NodeJs, Express, MongoDB, Tailwind, etc.), sus proyectos y los métodos de contacto." />
-		<meta name="author" content="Camilo Rodriguez">
-		<meta name="keywords" content="portfolio, full-stack, frontend, backend, desarrollador, desarrollador web, programador, javascript, react, tailwind, node, nodejs, express, mongo, mongodb"/>
-		<meta name="robots" content="index, follow"/>
+		<meta
+			name="description"
+			content="Portfolio de Camilo Rodriguez. Un desarrollador web Full-Stack con mas de dos años de estudio. En él encontrarás una presentacion de quién es, las tecnmologías que usa (tales como React, NodeJs, Express, MongoDB, Tailwind, etc.), sus proyectos y los métodos de contacto."
+		/>
+		<meta name="author" content="Camilo Rodriguez" />
+		<meta
+			name="keywords"
+			content="portfolio, full-stack, frontend, backend, desarrollador, desarrollador web, programador, javascript, react, tailwind, node, nodejs, express, mongo, mongodb"
+		/>
+		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
@@ -23,10 +28,17 @@ import Footer from "../components/Footer.astro";
 			color-scheme: light dark;
 		}
 		html {
-			font-family: 'Onest Variable',system-ui, sans-serif;
+			font-family: "Onest Variable", system-ui, sans-serif;
 			box-sizing: border-box;
 			padding: 0;
 			margin: 0;
 		}
+		#blob {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+		}
 	</style>
+
 </html>

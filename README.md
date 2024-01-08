@@ -1,2 +1,2 @@
-# Astro Starter Kit: Basics
-
+# Portfolio web de Camilo Rodriguez
+Hecho con Astro y TailwindCSS

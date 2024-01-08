@@ -1,17 +1,41 @@
 ---
 import Contact from "../components/Contact.astro";
-import Header from "../components/Header.astro"
-import Home from "../components/Home.astro"
+import Header from "../components/Header.astro";
+import Home from "../components/Home.astro";
 import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<body class="grid grid-cols-5 h-screen text-white  bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] bg-fixed">
-    <Header/>
-    <main class="col-span-5 lg:col-start-2 lg:col-span-4 flex flex-col place-items-center">
+<body
+    class="grid grid-cols-5 max-h-[2800px] text-white bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] bg-fixed overflow-x-hidden"
+>
+    <div
+        class="hiddem opacity-70 blur-3xl animate-spinnin bg-gradient-to-r from-purple-800 to-fuchsia-700 md:block h-96 w-96 rounded-full -z-10"
+        id="blob"
+    >
+    </div>
+    <Header />
+    <main
+        class="col-span-5 lg:col-start-2 lg:col-span-4 flex flex-col place-items-center z-10 overflow-visible"
+    >
         <Home />
-        <Projects/>
-        <Contact/>
-        <Footer/>
+        <Projects />
+        <Contact />
+        <Footer />
     </main>
 </body>
+
+<script>
+const blob = document.getElementById("blob");
+
+document.body.onpointermove = (e) => {
+    const { clientX, clientY } = e;
+
+    blob!.animate(
+        {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+        },
+        { duration: 5000, fill: "forwards" },
+    );
+};
