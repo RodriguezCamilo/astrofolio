@@ -10,7 +10,7 @@ export default {
 					"25%" : {transform: "rotate(90deg) scale(2.5, 2)"},
 					"50%" : {transform: "rotate(180deg) scale(2, 2)"},
 					"75%" : {transform: "rotate(270deg) scale(2, 2.5)"},
-					"100%":  { transform: 'rotate(360deg) scale(2, 2)' }
+					"100%":  { transform: 'rotate(360deg) scale(1, 1)' }
 				}
 			},
 			animation: {
