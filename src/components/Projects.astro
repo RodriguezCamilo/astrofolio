@@ -5,6 +5,7 @@ import Tailwind from "../icons/Tailwind.astro"
 import Express from "../icons/Express.astro";
 import Mongo from "../icons/Mongo.astro";
 import NodeJs from "../icons/NodeJs.astro";
+import GODOT from "../icons/Godot.astro"
 
 import GitHubIcon from "../icons/LinkGithub.astro";
 import LinkIcon from "../icons/Link.astro";
@@ -28,21 +29,12 @@ const TAGS = {
     NODE: {
         icon: NodeJs,
     },
-    A: {
-        icon: Express,
+    GODOT: {
+        icon: GODOT,
     }
 };
 
 const PROJECTS = [
-{
-        title: "X-clon / Twitter clon",
-        description:
-            "Un clon de Twitter de punta a punta hecho entre 2 desarrolladores. Un proyecto desafiante en el cual, con mi compañero, nos pusimos a prueba a nosotros mismos. La aplicacion esta construida con las ultimas tecnologias del frontend y backend.",
-        link: "https://github.com/NazaRamos/X-clone",
-        github: "https://github.com/NazaRamos/X-clone",
-        img: "/projects/x-clone.webp",
-        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
-    },
     {
         title: "KamShop - Ecommerce",
         description:
@@ -60,6 +52,23 @@ const PROJECTS = [
         github: "https://github.com/RodriguezCamilo/astrofolio",
         img: "/projects/astrofolio.webp",
         tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    },
+    {
+        title: "Jump King Clon",
+        description:
+            "Un clon del famoso juego Jump King, es un proyecto que hice para empezar a aprender desarrollo de videojuegos. Esta construido con el motor de videojuegos GODOT Engine. Para este caso use los sprites y sonidos que Brakeys proporciono gratuitamente.",
+        link: "https://elmasterkam.itch.io/el-rey-del-salto",
+        img: "/projects/JumpKing.webp",
+        tags: [TAGS.GODOT],
+    },
+    {
+        title: "X-clon / Twitter clon",
+        description:
+            "Un clon de Twitter de punta a punta hecho entre 2 desarrolladores. Un proyecto desafiante en el cual, con mi compañero, nos pusimos a prueba a nosotros mismos. La aplicacion esta construida con las ultimas tecnologias del frontend y backend.",
+        link: "https://github.com/NazaRamos/X-clone",
+        github: "https://github.com/NazaRamos/X-clone",
+        img: "/projects/x-clone.webp",
+        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
     }
 ];
 ---
