@@ -1,12 +1,11 @@
 ---
 import ReactIcon from "../icons/React.astro";
 import AstroIcon from "../icons/AstroIcon.astro";
-import Tailwind from "../icons/Tailwind.astro"
+import Tailwind from "../icons/Tailwind.astro";
 import Express from "../icons/Express.astro";
 import Mongo from "../icons/Mongo.astro";
 import NodeJs from "../icons/NodeJs.astro";
-import GODOT from "../icons/Godot.astro"
-
+import GODOT from "../icons/Godot.astro";
 import GitHubIcon from "../icons/LinkGithub.astro";
 import LinkIcon from "../icons/Link.astro";
 
@@ -36,13 +35,28 @@ const TAGS = {
 
 const PROJECTS = [
     {
+        title: "YouTube Music Clone",
+        description:
+            "Un clon de YT MUSIC. Inicie este proyecto para aprender las view transitions de Astro, pero tambien aprendi a utilizar otros frameworks en conjunto con Astro, como es el caso de React que lo use para hacer la dinamica del reproductor de musica usando Zustand como dependencia para el estado global.",
+        link: "https://github.com/RodriguezCamilo/ytmusic-clone",
+        github: "https://github.com/RodriguezCamilo/ytmusic-clone",
+        img: "/projects/ytmusic.webp",
+        tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
+    },
+    {
         title: "KamShop - Ecommerce",
         description:
             "Hice este e-commerce full-stack mientras estudiaba backend. Implemente un servidor con Express para hacer APIs REST, ¡Utilizando MongoDB como base de datos no relacional para guardar usuarios, productos, carritos, ordenes de compra y mas!",
         link: "https://github.com/RodriguezCamilo/KamShop",
         github: "https://github.com/RodriguezCamilo/KamShop",
         img: "/projects/kamshop.webp",
-        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
+        tags: [
+            TAGS.REACT,
+            TAGS.TAILWIND,
+            TAGS.NODE,
+            TAGS.EXPRESS,
+            TAGS.MONGODB,
+        ],
     },
     {
         title: "Astrofolio",
@@ -61,15 +75,6 @@ const PROJECTS = [
         img: "/projects/JumpKing.webp",
         tags: [TAGS.GODOT],
     },
-    {
-        title: "X-clon / Twitter clon",
-        description:
-            "Un clon de Twitter de punta a punta hecho entre 2 desarrolladores. Un proyecto desafiante en el cual, con mi compañero, nos pusimos a prueba a nosotros mismos. La aplicacion esta construida con las ultimas tecnologias del frontend y backend.",
-        link: "https://github.com/NazaRamos/X-clone",
-        github: "https://github.com/NazaRamos/X-clone",
-        img: "/projects/x-clone.webp",
-        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
-    }
 ];
 ---
 
@@ -114,7 +119,7 @@ const PROJECTS = [
                             <LinkIcon class="2xl:size-8 size-4 sm:size-4 " />
                         </a>
                         <a href={github} target="_blank">
-                            <GitHubIcon class="2xl:size-8 size-4 sm:size-4"/>
+                            <GitHubIcon class="2xl:size-8 size-4 sm:size-4" />
                         </a>
                     </div>
                 </div>
