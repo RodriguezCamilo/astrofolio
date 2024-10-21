@@ -10,129 +10,123 @@ import GitHubIcon from "../icons/LinkGithub.astro";
 import LinkIcon from "../icons/Link.astro";
 
 const TAGS = {
-    ASTRO: {
-        icon: AstroIcon,
-    },
-    TAILWIND: {
-        icon: Tailwind,
-    },
-    REACT: {
-        icon: ReactIcon,
-    },
-    EXPRESS: {
-        icon: Express,
-    },
-    MONGODB: {
-        icon: Mongo,
-    },
-    NODE: {
-        icon: NodeJs,
-    },
-    GODOT: {
-        icon: GODOT,
-    }
+  ASTRO: {
+    icon: AstroIcon,
+  },
+  TAILWIND: {
+    icon: Tailwind,
+  },
+  REACT: {
+    icon: ReactIcon,
+  },
+  EXPRESS: {
+    icon: Express,
+  },
+  MONGODB: {
+    icon: Mongo,
+  },
+  NODE: {
+    icon: NodeJs,
+  },
+  GODOT: {
+    icon: GODOT,
+  },
 };
 
 const PROJECTS = [
-{
-        title: "X Clone // En desarrollo",
-        description:
-            "Un clon de X/Twitter. Este proyecto sigue en desarrollo fue iniciado con la intentcion de aprender NextJs, Supabase y SQL. Como quiero dedicarme al frontend queria aprender el framework de React mas usado. Gracias a Next puedo hacer server side rendering, y al conectarlo con supabase, tener todos los datos que el usuario necesita. Inicio de sesion, postear, repostear, comentar, perfiles, rutas seguras, etc.",
-        link: "https://x-clone-seven-alpha.vercel.app",
-        github: "https://github.com/RodriguezCamilo/x-clone",
-        img: "/projects/x-clone.webp",
-        tags: [ TAGS.REACT, TAGS.TAILWIND],
-    },
-    {
-        title: "YouTube Music Clone",
-        description:
-            "Un clon de YouTube Music. Inicié este proyecto para aprender las transiciones de vista en Astro, pero también aprendí a utilizar otros frameworks junto con Astro, como React, que usé para implementar la dinámica del reproductor de música, utilizando Zustand como dependencia para el estado global.",
-        link: "https://ytmusicclone.netlify.app",
-        github: "https://github.com/RodriguezCamilo/ytmusic-clone",
-        img: "/projects/ytmusic.webp",
-        tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
-    },
-    {
-        title: "KamShop - Ecommerce",
-        description:
-            "Desarrollé este e-commerce full-stack mientras estudiaba backend. Implementé un servidor con Express para crear APIs REST, utilizando MongoDB como base de datos no relacional para almacenar usuarios, productos, carritos, órdenes de compra y más.",
-        link: "https://kamshop-client.vercel.app",
-        github: "https://github.com/RodriguezCamilo/KamShop",
-        img: "/projects/kamshop.webp",
-        tags: [
-            TAGS.REACT,
-            TAGS.TAILWIND,
-            TAGS.NODE,
-            TAGS.EXPRESS,
-            TAGS.MONGODB,
-        ],
-    },
-    {
-        title: "Astrofolio",
-        description:
-            "Este es mi portfolio web full stack, un sitio que muestra mis habilidades y experiencia en el desarrollo de aplicaciones web. El sitio está construido con Astro y Tailwind, ya que son las mejores opciones para construir un sitio web estático pero muy rápido.",
-        link: "https://kamdev-portfolio.netlify.app",
-        github: "https://github.com/RodriguezCamilo/astrofolio",
-        img: "/projects/astrofolio.webp",
-        tags: [TAGS.ASTRO, TAGS.TAILWIND],
-    },
-    {
-        title: "Jump King Clon",
-        description:
-            "Un clon del famoso juego Jump King, proyecto que desarrollé para comenzar a aprender sobre el desarrollo de videojuegos. Está construido con el motor de videojuegos GODOT Engine. Para este caso, utilicé los sprites y sonidos que Brakeys proporcionó gratuitamente.",
-        link: "https://elmasterkam.itch.io/el-rey-del-salto",
-        img: "/projects/JumpKing.webp",
-        tags: [TAGS.GODOT],
-    },
+  {
+    title: "X Clone",
+    description:
+      "Un clon de X/Twitter. Este proyecto fue iniciado con la intentcion de aprender NextJs, Supabase y SQL. Como quiero dedicarme al frontend queria aprender el framework de React mas usado. Gracias a Next puedo hacer server side rendering, y al conectarlo con supabase, tener todos los datos que el usuario necesita. Inicio de sesion, postear, repostear, comentar, perfiles, rutas seguras, etc.",
+    link: "https://x-clone-seven-alpha.vercel.app",
+    github: "https://github.com/RodriguezCamilo/x-clone",
+    img: "/projects/x-clone.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "YouTube Music Clone",
+    description:
+      "Un clon de YouTube Music. Inicié este proyecto para aprender las transiciones de vista en Astro, pero también aprendí a utilizar otros frameworks junto con Astro, como React, que usé para implementar la dinámica del reproductor de música, utilizando Zustand como dependencia para el estado global.",
+    link: "https://ytmusicclone.netlify.app",
+    github: "https://github.com/RodriguezCamilo/ytmusic-clone",
+    img: "/projects/ytmusic.webp",
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "KamShop - Ecommerce",
+    description:
+      "Desarrollé este e-commerce full-stack mientras estudiaba backend. Implementé un servidor con Express para crear APIs REST, utilizando MongoDB como base de datos no relacional para almacenar usuarios, productos, carritos, órdenes de compra y más.",
+    link: "https://kamshop-client.vercel.app",
+    github: "https://github.com/RodriguezCamilo/KamShop",
+    img: "/projects/kamshop.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGODB],
+  },
+  {
+    title: "Astrofolio",
+    description:
+      "Este es mi portfolio web full stack, un sitio que muestra mis habilidades y experiencia en el desarrollo de aplicaciones web. El sitio está construido con Astro y Tailwind, ya que son las mejores opciones para construir un sitio web estático pero muy rápido.",
+    link: "https://kamdev-portfolio.netlify.app",
+    github: "https://github.com/RodriguezCamilo/astrofolio",
+    img: "/projects/astrofolio.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "Jump King Clon",
+    description:
+      "Un clon del famoso juego Jump King, proyecto que desarrollé para comenzar a aprender sobre el desarrollo de videojuegos. Está construido con el motor de videojuegos GODOT Engine. Para este caso, utilicé los sprites y sonidos que Brakeys proporcionó gratuitamente.",
+    link: "https://elmasterkam.itch.io/el-rey-del-salto",
+    img: "/projects/JumpKing.webp",
+    tags: [TAGS.GODOT],
+  },
 ];
 ---
 
 <section id="projects" class="p-9 gap-6 lg:gap-10 grid grid-cols-1 grid-rows-3">
-    {
-        PROJECTS.map(({ img, title, description, tags, link, github }) => (
-            <article class="group bg-neutral-950 opacity-70 hover:bg-purple-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 overflow-hidden">
-                <a
-                    href={link}
-                    target="_blank"
-                    class="mr-4 hover:opacity-40 duration-200 flex"
-                >
-                    <img
-                        loading="lazy"
-                        class="aspect-video rounded-lg object-cover object-center m-2"
-                        src={img}
-                        alt={`Captura de pantalla del proyecto ${img}`}
-                    />
-                </a>
-                <div class="flex flex-col text-center place-content-center mx-4 justify-evenly">
-                    <h3 class=" text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-purple-600 group-hover:text-neutral-950 mb-2 flex-initial group-hover:underline">
-                        {title}
-                    </h3>
-                    <div class="text-center sm:text-left">
-                        <p class="text-sm sm:text-lg xl:text-xl 2xl:text-2xl mb-4 text-balance flex-initial text-purple-600 group-hover:text-neutral-950 font-semibold">
-                            {description}
-                        </p>
-                        <ul class="flex  gap-x-2 flex-row ">
-                            {tags.map((tag) => (
-                                <li>
-                                    <span
-                                        class={`flex gap-x-2 rounded-full text-xs px-2 border-2 border-neutral-900/20 group-hover:border-purple-900`}
-                                    >
-                                        <tag.icon class="2xl:size-6 size-4 sm:size-4" />
-                                    </span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div class="flex place-content-end gap-2 mx-0 sm:mx-4">
-                        <a href={link} target="_blank">
-                            <LinkIcon class="2xl:size-8 size-4 sm:size-4 " />
-                        </a>
-                        <a href={github} target="_blank">
-                            <GitHubIcon class="2xl:size-8 size-4 sm:size-4" />
-                        </a>
-                    </div>
-                </div>
-            </article>
-        ))
-    }
+  {
+    PROJECTS.map(({ img, title, description, tags, link, github }) => (
+      <article class="group bg-neutral-950 opacity-70 hover:bg-purple-600 duration-200 rounded-lg border-2 border-neutral-900/20 p-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 overflow-hidden">
+        <a
+          href={link}
+          target="_blank"
+          class="mr-4 hover:opacity-40 duration-200 flex"
+        >
+          <img
+            loading="lazy"
+            class="aspect-video rounded-lg object-cover object-center m-2"
+            src={img}
+            alt={`Captura de pantalla del proyecto ${img}`}
+          />
+        </a>
+        <div class="flex flex-col text-center place-content-center mx-4 justify-evenly">
+          <h3 class=" text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-purple-600 group-hover:text-neutral-950 mb-2 flex-initial group-hover:underline">
+            {title}
+          </h3>
+          <div class="text-center sm:text-left">
+            <p class="text-sm sm:text-lg xl:text-xl 2xl:text-2xl mb-4 text-balance flex-initial text-purple-600 group-hover:text-neutral-950 font-semibold">
+              {description}
+            </p>
+            <ul class="flex  gap-x-2 flex-row ">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs px-2 border-2 border-neutral-900/20 group-hover:border-purple-900`}
+                  >
+                    <tag.icon class="2xl:size-6 size-4 sm:size-4" />
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="flex place-content-end gap-2 mx-0 sm:mx-4">
+            <a href={link} target="_blank">
+              <LinkIcon class="2xl:size-8 size-4 sm:size-4 " />
+            </a>
+            <a href={github} target="_blank">
+              <GitHubIcon class="2xl:size-8 size-4 sm:size-4" />
+            </a>
+          </div>
+        </div>
+      </article>
+    ))
+  }
 </section>
